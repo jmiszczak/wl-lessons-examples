@@ -1,0 +1,1031 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     37278,       1022]
+NotebookOptionsPosition[     35538,        957]
+NotebookOutlinePosition[     36331,        986]
+CellTagsIndexPosition[     36164,        979]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"?", "NumericQ"}]], "Input",
+ CellChangeTimes->{{3.634567438724533*^9, 3.634567447495378*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\!\(\*RowBox[{\\\"NumericQ\\\", \\\"[\\\", \
+StyleBox[\\\"expr\\\", \\\"TI\\\"], \\\"]\\\"}]\) gives True if \
+\!\(\*StyleBox[\\\"expr\\\", \\\"TI\\\"]\) is a numeric quantity, and False \
+otherwise. \"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/NumericQ"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.634567448367392*^9},
+ CellTags->"Info3634571048-9428494"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", 
+   RowBox[{"x_", "?", "NumericQ"}], "]"}], ":=", 
+  RowBox[{"x", "+", "1"}]}]], "Input",
+ CellChangeTimes->{{3.6345674508708553`*^9, 3.6345674811369963`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", "=", "1"}]], "Input",
+ CellChangeTimes->{{3.63456746708033*^9, 3.634567467390525*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.634567467755536*^9, 3.634567483893773*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "[", "a", "]"}]], "Input",
+ CellChangeTimes->{{3.634567465280933*^9, 3.634567465667017*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{{3.6345674660834846`*^9, 3.634567482753441*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"{", "1", "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6345674688448467`*^9, 3.6345674923312893`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"{", "1", "}"}], "]"}]], "Output",
+ CellChangeTimes->{{3.6345674697020483`*^9, 3.6345674928169613`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatrixQ", "[", "a", "]"}]], "Input",
+ CellChangeTimes->{{3.634568075956856*^9, 3.634568081480274*^9}}],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{{3.634568079385735*^9, 3.634568081907403*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", "//", "MatrixQ"}]], "Input",
+ CellChangeTimes->{{3.634568088688999*^9, 3.6345680996095133`*^9}}],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{{3.63456809513449*^9, 3.6345681000309143`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "PatternTest"}]], "Input",
+ CellChangeTimes->{{3.634568172823325*^9, 3.634568172949774*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{StyleBox[\\\"p\\\", \\\"TI\\\"], \\\"?\\\", \
+StyleBox[\\\"test\\\", \\\"TI\\\"]}]\\) is a pattern object that stands for \
+any expression that matches \\!\\(\\*StyleBox[\\\"p\\\", \\\"TI\\\"]\\), and \
+on which the application of \\!\\(\\*StyleBox[\\\"test\\\", \\\"TI\\\"]\\) \
+gives True. \"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/PatternTest"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.634568173298338*^9},
+ CellTags->"Info3634571773-9428494"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "*Q"}]], "Input",
+ CellChangeTimes->{{3.634568207489706*^9, 3.634568210283527*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ DynamicModuleBox[{Typeset`open$$ = True}, 
+  PaneSelectorBox[{False->
+   RowBox[{
+    OpenerBox[Dynamic[Typeset`open$$],
+     ImageSize->Small], 
+    StyleBox["System`", "InfoHeading"]}], True->GridBox[{
+     {
+      RowBox[{
+       OpenerBox[Dynamic[Typeset`open$$],
+        ImageSize->Small], 
+       StyleBox["System`", "InfoHeading"]}]},
+     {GridBox[{
+        {
+         ButtonBox["AcyclicGraphQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"AcyclicGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["HamiltonianGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"HamiltonianGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["OrthogonalMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"OrthogonalMatrixQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["AlgebraicIntegerQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"AlgebraicIntegerQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["HermitianMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"HermitianMatrixQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["OutputControllableModelQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"OutputControllableModelQ", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["AlgebraicUnitQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"AlgebraicUnitQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["HypergeometricPFQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{
+           "Info3634571810-9428494", {"HypergeometricPFQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PartitionsQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"PartitionsQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["AntihermitianMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"AntihermitianMatrixQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ImageQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"ImageQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PathGraphQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"PathGraphQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["AntisymmetricMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"AntisymmetricMatrixQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["IndefiniteMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"IndefiniteMatrixQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PermutationCyclesQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"PermutationCyclesQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ArgumentCountQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"ArgumentCountQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["IndependentEdgeSetQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"IndependentEdgeSetQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PermutationListQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"PermutationListQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ArrayQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"ArrayQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["IndependentVertexSetQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"IndependentVertexSetQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PlanarGraphQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"PlanarGraphQ", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["AssociationQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"AssociationQ", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["InexactNumberQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"InexactNumberQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PolynomialQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"PolynomialQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["AtomQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"AtomQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["IntegerQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"IntegerQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PositiveDefiniteMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"PositiveDefiniteMatrixQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BinaryImageQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"BinaryImageQ", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["IntersectingQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"IntersectingQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PositiveSemidefiniteMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {
+            "PositiveSemidefiniteMatrixQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BipartiteGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"BipartiteGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["IntervalMemberQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"IntervalMemberQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PossibleZeroQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"PossibleZeroQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BooleanQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"BooleanQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["InverseEllipticNomeQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"InverseEllipticNomeQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PrimePowerQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"PrimePowerQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BoundaryMeshRegionQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"BoundaryMeshRegionQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["IrreduciblePolynomialQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"IrreduciblePolynomialQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PrimeQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"PrimeQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BoundedRegionQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"BoundedRegionQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["IsomorphicGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"IsomorphicGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ProcessParameterQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"ProcessParameterQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BusinessDayQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"BusinessDayQ", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["KEdgeConnectedGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"KEdgeConnectedGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["QHypergeometricPFQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"QHypergeometricPFQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ColorQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"ColorQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["KeyExistsQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"KeyExistsQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["QuadraticIrrationalQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"QuadraticIrrationalQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["CompatibleUnitQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"CompatibleUnitQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["KeyFreeQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"KeyFreeQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["QuantityQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"QuantityQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["CompleteGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"CompleteGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["KeyMemberQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"KeyMemberQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["RegionQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"RegionQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["CompositeQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"CompositeQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["KnownUnitQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"KnownUnitQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["RegularlySampledQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"RegularlySampledQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ConnectedGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"ConnectedGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["KVertexConnectedGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"KVertexConnectedGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["RootOfUnityQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"RootOfUnityQ", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ConstantRegionQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"ConstantRegionQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["LeapYearQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"LeapYearQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SameQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"SameQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ContinuousTimeModelQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"ContinuousTimeModelQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["LegendreQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"LegendreQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SatisfiableQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"SatisfiableQ", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ControllableModelQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"ControllableModelQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["LetterQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"LetterQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ScheduledTaskActiveQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"ScheduledTaskActiveQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["CoprimeQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"CoprimeQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["LinkConnectedQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"LinkConnectedQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SimpleGraphQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"SimpleGraphQ", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DateObjectQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"DateObjectQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["LinkReadyQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"LinkReadyQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SquareFreeQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"SquareFreeQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DaylightQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"DaylightQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ListQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"ListQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SquareMatrixQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"SquareMatrixQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DayMatchQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"DayMatchQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["LoopFreeGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"LoopFreeGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["StringFreeQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"StringFreeQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DeviceOpenQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"DeviceOpenQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["LowerCaseQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"LowerCaseQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["StringMatchQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"StringMatchQ", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DiagonalizableMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"DiagonalizableMatrixQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MachineNumberQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"MachineNumberQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["StringQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"StringQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DigitQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"DigitQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ManagedLibraryExpressionQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"ManagedLibraryExpressionQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SubsetQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"SubsetQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DirectedGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"DirectedGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MandelbrotSetMemberQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"MandelbrotSetMemberQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SymmetricMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"SymmetricMatrixQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DirectoryQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"DirectoryQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MarcumQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"MarcumQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SyntaxQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"SyntaxQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DiscreteTimeModelQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"DiscreteTimeModelQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MatchLocalNameQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"MatchLocalNameQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["TautologyQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"TautologyQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DisjointQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"DisjointQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MatchQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"MatchQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["TensorQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"TensorQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DispatchQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"DispatchQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MatrixQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"MatrixQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["TreeGraphQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"TreeGraphQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DistributionParameterQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"DistributionParameterQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MemberQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"MemberQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["TrueQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"TrueQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DuplicateFreeQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"DuplicateFreeQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MeshRegionQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"MeshRegionQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["UnateQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"UnateQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["EdgeCoverQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"EdgeCoverQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MixedGraphQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"MixedGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["UndirectedGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"UndirectedGraphQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["EdgeQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"EdgeQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MultigraphQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"MultigraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["UnitaryMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"UnitaryMatrixQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["EllipticNomeQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"EllipticNomeQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["NameQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"NameQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["UnsameQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"UnsameQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["EmptyGraphQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"EmptyGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["NegativeDefiniteMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"NegativeDefiniteMatrixQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["UpperCaseQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"UpperCaseQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["EulerianGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"EulerianGraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["NegativeSemidefiniteMatrixQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {
+            "NegativeSemidefiniteMatrixQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["URLExistsQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"URLExistsQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["EvenQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"EvenQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["NormalMatrixQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"NormalMatrixQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ValueQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"ValueQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ExactNumberQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"ExactNumberQ", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["NumberQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"NumberQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["VectorQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"VectorQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FileExistsQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"FileExistsQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["NumericQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"NumericQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["VertexCoverQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"VertexCoverQ", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FreeQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"FreeQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ObservableModelQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"ObservableModelQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["VertexQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"VertexQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["GeoWithinQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"GeoWithinQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["OddQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"OddQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["WeaklyConnectedGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"WeaklyConnectedGraphQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["GraphQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"GraphQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["OptionQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"OptionQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["WeightedGraphQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"WeightedGraphQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["GroupElementQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"GroupElementQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["OrderedQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3634571810-9428494", {"OrderedQ", "System`"}},
+          ButtonNote->"System`"], ""}
+       },
+       DefaultBaseStyle->"InfoGrid",
+       GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.31666666666666665`]}}}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}]}, 
+   Dynamic[Typeset`open$$],
+   ImageSize->Automatic]], "\n", 
+ DynamicModuleBox[{Typeset`open$$ = True}, 
+  PaneSelectorBox[{False->
+   RowBox[{
+    OpenerBox[Dynamic[Typeset`open$$],
+     ImageSize->Small], 
+    StyleBox["PacletManager`", "InfoHeading"]}], True->GridBox[{
+     {
+      RowBox[{
+       OpenerBox[Dynamic[Typeset`open$$],
+        ImageSize->Small], 
+       StyleBox["PacletManager`", "InfoHeading"]}]},
+     {GridBox[{
+        {
+         ButtonBox["PacletNewerQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3634571810-9428494", {"PacletNewerQ", "PacletManager`"}},
+          ButtonNote->"PacletManager`"]}
+       },
+       DefaultBaseStyle->"InfoGrid",
+       GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.95]}}}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}]}, 
+   Dynamic[Typeset`open$$],
+   ImageSize->Automatic]]}], "Print", "InfoCell",
+ CellChangeTimes->{3.6345682110279417`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\!\(\*RowBox[{\\\"AcyclicGraphQ\\\", \\\"[\\\", \
+StyleBox[\\\"g\\\", \\\"TI\\\"], \\\"]\\\"}]\) yields True if the graph \
+\!\(\*StyleBox[\\\"g\\\", \\\"TI\\\"]\) is an acyclic graph and False \
+otherwise.\"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/AcyclicGraphQ"]}]], "Print", "PrintUsage",
+ CellTags->"Info3634571810-9428494"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 909},
+WindowMargins->{{484, Automatic}, {Automatic, 39}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3634571048-9428494"->{
+  Cell[700, 26, 513, 12, 44, "Print",
+   CellTags->"Info3634571048-9428494"]},
+ "Info3634571773-9428494"->{
+  Cell[2945, 107, 625, 13, 63, "Print",
+   CellTags->"Info3634571773-9428494"]},
+ "Info3634571810-9428494"->{
+  Cell[35028, 942, 482, 11, 44, "Print",
+   CellTags->"Info3634571810-9428494"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3634571048-9428494", 35841, 967},
+ {"Info3634571773-9428494", 35949, 970},
+ {"Info3634571810-9428494", 36059, 973}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 117, 2, 32, "Input"],
+Cell[700, 26, 513, 12, 44, "Print",
+ CellTags->"Info3634571048-9428494"]
+}, Open  ]],
+Cell[1228, 41, 203, 5, 32, "Input"],
+Cell[CellGroupData[{
+Cell[1456, 50, 114, 2, 32, "Input"],
+Cell[1573, 54, 94, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1704, 60, 120, 2, 32, "Input"],
+Cell[1827, 64, 96, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1960, 70, 147, 3, 32, "Input"],
+Cell[2110, 75, 148, 3, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2295, 83, 126, 2, 32, "Input"],
+Cell[2424, 87, 98, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2559, 93, 124, 2, 32, "Input"],
+Cell[2686, 97, 99, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2822, 103, 120, 2, 32, "Input"],
+Cell[2945, 107, 625, 13, 63, "Print",
+ CellTags->"Info3634571773-9428494"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3607, 125, 111, 2, 32, "Input"],
+Cell[CellGroupData[{
+Cell[3743, 131, 31282, 809, 1272, "Print"],
+Cell[35028, 942, 482, 11, 44, "Print",
+ CellTags->"Info3634571810-9428494"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

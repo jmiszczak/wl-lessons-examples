@@ -1,0 +1,308 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9019,        299]
+NotebookOptionsPosition[      8080,        260]
+NotebookOutlinePosition[      8572,        281]
+CellTagsIndexPosition[      8488,        276]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"i", "^", "2"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", 
+     RowBox[{"{", 
+      RowBox[{"a", ",", "b", ",", "c"}], "}"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.634573907996922*^9, 3.6345739526641493`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   SuperscriptBox["a", "2"], ",", 
+   SuperscriptBox["b", "2"], ",", 
+   SuperscriptBox["c", "2"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.634573928179554*^9, 3.634573953498955*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"1", "/", 
+    RowBox[{"(", 
+     RowBox[{"i", "+", "j", "-", "1"}], ")"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "1", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"j", ",", "1", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.634574531159058*^9, 3.634574606569346*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     FractionBox["1", "2"], ",", 
+     FractionBox["1", "3"], ",", 
+     FractionBox["1", "4"], ",", 
+     FractionBox["1", "5"], ",", 
+     FractionBox["1", "6"], ",", 
+     FractionBox["1", "7"], ",", 
+     FractionBox["1", "8"], ",", 
+     FractionBox["1", "9"], ",", 
+     FractionBox["1", "10"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "2"], ",", 
+     FractionBox["1", "3"], ",", 
+     FractionBox["1", "4"], ",", 
+     FractionBox["1", "5"], ",", 
+     FractionBox["1", "6"], ",", 
+     FractionBox["1", "7"], ",", 
+     FractionBox["1", "8"], ",", 
+     FractionBox["1", "9"], ",", 
+     FractionBox["1", "10"], ",", 
+     FractionBox["1", "11"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "3"], ",", 
+     FractionBox["1", "4"], ",", 
+     FractionBox["1", "5"], ",", 
+     FractionBox["1", "6"], ",", 
+     FractionBox["1", "7"], ",", 
+     FractionBox["1", "8"], ",", 
+     FractionBox["1", "9"], ",", 
+     FractionBox["1", "10"], ",", 
+     FractionBox["1", "11"], ",", 
+     FractionBox["1", "12"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "4"], ",", 
+     FractionBox["1", "5"], ",", 
+     FractionBox["1", "6"], ",", 
+     FractionBox["1", "7"], ",", 
+     FractionBox["1", "8"], ",", 
+     FractionBox["1", "9"], ",", 
+     FractionBox["1", "10"], ",", 
+     FractionBox["1", "11"], ",", 
+     FractionBox["1", "12"], ",", 
+     FractionBox["1", "13"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "5"], ",", 
+     FractionBox["1", "6"], ",", 
+     FractionBox["1", "7"], ",", 
+     FractionBox["1", "8"], ",", 
+     FractionBox["1", "9"], ",", 
+     FractionBox["1", "10"], ",", 
+     FractionBox["1", "11"], ",", 
+     FractionBox["1", "12"], ",", 
+     FractionBox["1", "13"], ",", 
+     FractionBox["1", "14"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "6"], ",", 
+     FractionBox["1", "7"], ",", 
+     FractionBox["1", "8"], ",", 
+     FractionBox["1", "9"], ",", 
+     FractionBox["1", "10"], ",", 
+     FractionBox["1", "11"], ",", 
+     FractionBox["1", "12"], ",", 
+     FractionBox["1", "13"], ",", 
+     FractionBox["1", "14"], ",", 
+     FractionBox["1", "15"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "7"], ",", 
+     FractionBox["1", "8"], ",", 
+     FractionBox["1", "9"], ",", 
+     FractionBox["1", "10"], ",", 
+     FractionBox["1", "11"], ",", 
+     FractionBox["1", "12"], ",", 
+     FractionBox["1", "13"], ",", 
+     FractionBox["1", "14"], ",", 
+     FractionBox["1", "15"], ",", 
+     FractionBox["1", "16"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "8"], ",", 
+     FractionBox["1", "9"], ",", 
+     FractionBox["1", "10"], ",", 
+     FractionBox["1", "11"], ",", 
+     FractionBox["1", "12"], ",", 
+     FractionBox["1", "13"], ",", 
+     FractionBox["1", "14"], ",", 
+     FractionBox["1", "15"], ",", 
+     FractionBox["1", "16"], ",", 
+     FractionBox["1", "17"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "9"], ",", 
+     FractionBox["1", "10"], ",", 
+     FractionBox["1", "11"], ",", 
+     FractionBox["1", "12"], ",", 
+     FractionBox["1", "13"], ",", 
+     FractionBox["1", "14"], ",", 
+     FractionBox["1", "15"], ",", 
+     FractionBox["1", "16"], ",", 
+     FractionBox["1", "17"], ",", 
+     FractionBox["1", "18"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "10"], ",", 
+     FractionBox["1", "11"], ",", 
+     FractionBox["1", "12"], ",", 
+     FractionBox["1", "13"], ",", 
+     FractionBox["1", "14"], ",", 
+     FractionBox["1", "15"], ",", 
+     FractionBox["1", "16"], ",", 
+     FractionBox["1", "17"], ",", 
+     FractionBox["1", "18"], ",", 
+     FractionBox["1", "19"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.634574555066193*^9, 3.6345746070775137`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["HilbertMatrix"], "Input",
+ CellChangeTimes->{{3.6345746081899147`*^9, 3.634574619754932*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"HilbertMatrix\\\", \\\"[\\\", \
+StyleBox[\\\"n\\\", \\\"TI\\\"], \\\"]\\\"}]\\) gives the \
+\\!\\(\\*StyleBox[\\\"n\\\", \
+\\\"TI\\\"]\\)\[Times]\\!\\(\\*StyleBox[\\\"n\\\", \\\"TI\\\"]\\) Hilbert \
+matrix with elements of the form \\!\\(\\*RowBox[{\\\"1\\\", \\\"/\\\", \
+RowBox[{\\\"(\\\", RowBox[{StyleBox[\\\"i\\\", \\\"TI\\\"], \\\"+\\\", \
+StyleBox[\\\"j\\\", \\\"TI\\\"], \\\"-\\\", \\\"1\\\"}], \\\")\\\"}]}]\\).\\n\
+\\!\\(\\*RowBox[{\\\"HilbertMatrix\\\", \\\"[\\\", RowBox[{\\\"{\\\", \
+RowBox[{StyleBox[\\\"m\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"n\\\", \
+\\\"TI\\\"]}], \\\"}\\\"}], \\\"]\\\"}]\\) gives the \
+\\!\\(\\*StyleBox[\\\"m\\\", \
+\\\"TI\\\"]\\)\[Times]\\!\\(\\*StyleBox[\\\"n\\\", \\\"TI\\\"]\\) Hilbert \
+matrix.\"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/HilbertMatrix"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.634574611565639*^9},
+ CellTags->"Info3634578211-5230303"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{"i", ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", 
+     RowBox[{"Range", "[", "10", "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.634574904937482*^9, 3.6345749184478817`*^9}, {
+  3.634575033169489*^9, 3.634575033199563*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",", "8", 
+   ",", "9", ",", "10"}], "}"}]], "Output",
+ CellChangeTimes->{3.634574919183226*^9, 3.6345750344657707`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"i", "^", "2"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", 
+     RowBox[{"Range", "[", 
+      RowBox[{"x", ",", 
+       RowBox[{"x", "+", "4"}]}], "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6345749868920507`*^9, 3.634575000955021*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   SuperscriptBox["x", "2"], ",", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"1", "+", "x"}], ")"}], "2"], ",", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"2", "+", "x"}], ")"}], "2"], ",", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"3", "+", "x"}], ")"}], "2"], ",", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"4", "+", "x"}], ")"}], "2"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.6345749965088997`*^9, 3.634575001488798*^9}}]
+}, Open  ]]
+},
+WindowSize->{808, 909},
+WindowMargins->{{474, Automatic}, {Automatic, 29}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3634578211-5230303"->{
+  Cell[5583, 185, 1079, 21, 63, "Print",
+   CellTags->"Info3634578211-5230303"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3634578211-5230303", 8383, 270}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 285, 8, 32, "Input"],
+Cell[868, 32, 224, 6, 37, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1129, 43, 362, 10, 32, "Input"],
+Cell[1494, 55, 3942, 122, 329, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5473, 182, 107, 1, 32, "Input"],
+Cell[5583, 185, 1079, 21, 63, "Print",
+ CellTags->"Info3634578211-5230303"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6699, 211, 283, 7, 32, "Input"],
+Cell[6985, 220, 227, 5, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7249, 230, 312, 9, 32, "Input"],
+Cell[7564, 241, 500, 16, 37, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
