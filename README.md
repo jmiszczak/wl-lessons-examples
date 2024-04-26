@@ -1,2 +1,7 @@
 # wl-lessons-examples
-Examples ueed in Sort Lessons on Wolfram Language 
+Examples used in a book *Sort Lessons on Wolfram Language*.
+
+More information about the book:
+[https://miszczak.eu/wl-lessons/](https://miszczak.eu/wl-lessons/).
+
+
