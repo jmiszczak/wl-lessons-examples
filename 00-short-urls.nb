@@ -1,0 +1,174 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6264,        166]
+NotebookOptionsPosition[      4382,        124]
+NotebookOutlinePosition[      4786,        140]
+CellTagsIndexPosition[      4743,        137]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"URLShorten", "[", 
+  "\"\<https://writings.stephenwolfram.com/2024/01/the-story-continues-\
+announcing-version-14-of-wolfram-language-and-mathematica/\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.922423475808886*^9, 3.9224234815680017`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"8d389070-23ce-4e62-a653-63bfcafc68ea"],
+
+Cell[BoxData["\<\"https://wolfr.am/1lKaeIl9c\"\>"], "Output",
+ CellChangeTimes->{3.922423487429311*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"8a8a0565-b61b-43a5-872b-db5a6ae3a9fa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLShorten", "[", 
+  "\"\<https://blog.wolfram.com/2017/10/10/building-the-automated-data-\
+scientist-the-new-classify-and-predict/\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.922423514664769*^9, 3.922423520224684*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"9a7ca2e2-f698-44d2-a01c-e1d0b27c970b"],
+
+Cell[BoxData["\<\"https://wolfr.am/1lKagZXQW\"\>"], "Output",
+ CellChangeTimes->{3.922423521103407*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"bba2e5d6-c0be-4cff-a207-b03dc0f8d786"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.922423511000793*^9, 
+  3.922423518048465*^9}},ExpressionUUID->"6359fed7-9cbb-4245-a54e-\
+87b67e74268c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLShorten", "[", 
+  "\"\<https://writings.stephenwolfram.com/2023/03/chatgpt-gets-its-wolfram-\
+superpowers/\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.92242360104466*^9, 3.922423609891313*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"4924660a-9a2d-4cf7-8f19-29dbd31bfce3"],
+
+Cell[BoxData["\<\"https://wolfr.am/1lKan936q\"\>"], "Output",
+ CellChangeTimes->{3.922423611911385*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"2901013c-c920-40a9-944b-e0d0fd74f0d8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLShorten", "[", 
+  "\"\<https://www.wolfram.com/mathematica/new-in-8/free-form-linguistic-\
+input/\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.9224236590774097`*^9, 3.922423665484671*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"a70e21d9-8a31-44fd-a4d8-23c20bee3e92"],
+
+Cell[BoxData["\<\"https://wolfr.am/1lKaqQ5lI\"\>"], "Output",
+ CellChangeTimes->{3.9224236665038843`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"4da3ad62-35d3-4f8a-8b5a-578f31eb3370"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLShorten", "[", 
+  "\"\<https://blog.wolfram.com/2015/03/04/the-wolfram-data-drop-is-live/\>\"\
+", "]"}]], "Input",
+ CellChangeTimes->{{3.922423745876856*^9, 3.922423748298162*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"bdb6e685-4011-4234-a00c-689b36059b32"],
+
+Cell[BoxData["\<\"https://wolfr.am/1lKawsHzR\"\>"], "Output",
+ CellChangeTimes->{3.922423749573082*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"903a7cdc-a521-47fd-a9fb-48c2c4e6625a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLShorten", "[", 
+  "\"\<https://www.wolfram.com/language/elementary-introduction/3rd-ed/\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.922423773468575*^9, 3.922423776532526*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"752fd447-bda2-457e-ae24-e19f41d27e7d"],
+
+Cell[BoxData["\<\"https://wolfr.am/1lKaylUui\"\>"], "Output",
+ CellChangeTimes->{3.9224237775233393`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"1c90927f-6360-41a7-94f9-15b6348248f7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLShorten", "[", 
+  "\"\<https://archive.org/details/ost-computer-science-mathprogrammingintro\>\
+\"", "]"}]], "Input",
+ CellChangeTimes->{{3.922423800093026*^9, 3.922423802229946*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"1a8fce30-7835-43eb-83de-fe863ff2d9ca"],
+
+Cell[BoxData["\<\"https://wolfr.am/1lKaA6rYR\"\>"], "Output",
+ CellChangeTimes->{3.922423803360808*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"865d6452-7b3e-4fa7-899f-4a70575f1a36"]
+}, Open  ]]
+},
+WindowSize->{606, 683.25},
+WindowMargins->{{Automatic, 979.5}, {Automatic, 167.25}},
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"853a1973-2be2-49ec-a69a-1404e83f4f17"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 346, 6, 90, "Input",ExpressionUUID->"8d389070-23ce-4e62-a653-63bfcafc68ea"],
+Cell[929, 30, 181, 2, 33, "Output",ExpressionUUID->"8a8a0565-b61b-43a5-872b-db5a6ae3a9fa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1147, 37, 322, 5, 70, "Input",ExpressionUUID->"9a7ca2e2-f698-44d2-a01c-e1d0b27c970b"],
+Cell[1472, 44, 181, 2, 33, "Output",ExpressionUUID->"bba2e5d6-c0be-4cff-a207-b03dc0f8d786"]
+}, Open  ]],
+Cell[1668, 49, 152, 3, 29, "Input",ExpressionUUID->"6359fed7-9cbb-4245-a54e-87b67e74268c"],
+Cell[CellGroupData[{
+Cell[1845, 56, 299, 5, 70, "Input",ExpressionUUID->"4924660a-9a2d-4cf7-8f19-29dbd31bfce3"],
+Cell[2147, 63, 181, 2, 33, "Output",ExpressionUUID->"2901013c-c920-40a9-944b-e0d0fd74f0d8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2365, 70, 293, 5, 70, "Input",ExpressionUUID->"a70e21d9-8a31-44fd-a4d8-23c20bee3e92"],
+Cell[2661, 77, 183, 2, 33, "Output",ExpressionUUID->"4da3ad62-35d3-4f8a-8b5a-578f31eb3370"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2881, 84, 285, 5, 70, "Input",ExpressionUUID->"bdb6e685-4011-4234-a00c-689b36059b32"],
+Cell[3169, 91, 181, 2, 33, "Output",ExpressionUUID->"903a7cdc-a521-47fd-a9fb-48c2c4e6625a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3387, 98, 284, 5, 70, "Input",ExpressionUUID->"752fd447-bda2-457e-ae24-e19f41d27e7d"],
+Cell[3674, 105, 183, 2, 33, "Output",ExpressionUUID->"1c90927f-6360-41a7-94f9-15b6348248f7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3894, 112, 288, 5, 50, "Input",ExpressionUUID->"1a8fce30-7835-43eb-83de-fe863ff2d9ca"],
+Cell[4185, 119, 181, 2, 33, "Output",ExpressionUUID->"865d6452-7b3e-4fa7-899f-4a70575f1a36"]
+}, Open  ]]
+}
+]
+*)
+
