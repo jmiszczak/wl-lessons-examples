@@ -1,0 +1,1213 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     43844,       1205]
+NotebookOptionsPosition[     38719,       1100]
+NotebookOutlinePosition[     39745,       1130]
+CellTagsIndexPosition[     39575,       1123]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Quit", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.6153979722247357`*^9, 
+  3.615397973205235*^9}},ExpressionUUID->"789a4421-40ab-45b2-8535-\
+ab866889ab86"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"<<", "QI`"}]], "Input",
+ CellChangeTimes->{{3.615397961983072*^9, 
+  3.615397964743018*^9}},ExpressionUUID->"d014d8d6-b1cc-4c5b-aaa1-\
+11941d058cd7"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"SetDelayed", "::", "write"}], "MessageName"], ":", 
+  " ", "\<\"Tag \[NoBreak]\\!\\(SquareMatrixQ\\)\[NoBreak] in \
+\[NoBreak]\\!\\(SquareMatrixQ[A_]\\)\[NoBreak] is Protected. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/write\\\", \
+ButtonNote -> \\\"SetDelayed::write\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.615397965342845*^9, 3.615398000124579*^9, 
+  3.61553394647839*^9},ExpressionUUID->"0d2ed428-78da-4893-ba71-e9c5df6518f7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package QI version \"\>", 
+   "\[InvisibleSpace]", "\<\"0.4.37\"\>", 
+   "\[InvisibleSpace]", "\<\" (last modification: \"\>", 
+   "\[InvisibleSpace]", "\<\"21/12/2012\"\>", 
+   "\[InvisibleSpace]", "\<\").\"\>"}],
+  SequenceForm[
+  "Package QI version ", "0.4.37", " (last modification: ", "21/12/2012", 
+   ")."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.615397965344863*^9, 3.615398000126068*^9, 
+  3.6155339464939632`*^9},ExpressionUUID->"e53eb58f-ad4f-4e1c-ae9e-\
+cf9b9234f3fb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"<<", "QIExtras`"}]], "Input",
+ CellChangeTimes->{{3.61539802148242*^9, 
+  3.615398025005178*^9}},ExpressionUUID->"d8152488-738c-4378-b6a0-\
+7dc95fa37dd8"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package QIExtras \"\>", "\[InvisibleSpace]", "\<\"0.0.10\"\>", 
+   "\[InvisibleSpace]", "\<\" (last modification: \"\>", 
+   "\[InvisibleSpace]", "\<\"04/02/2012\"\>", 
+   "\[InvisibleSpace]", "\<\").\"\>"}],
+  SequenceForm[
+  "Package QIExtras ", "0.0.10", " (last modification: ", "04/02/2012", ")."],
+  
+  Editable->False]], "Print",
+ CellChangeTimes->{3.615398025541559*^9, 
+  3.615533946643862*^9},ExpressionUUID->"12d37ed8-6a4d-4561-b55f-\
+38810a605cb6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "QI`*"}]], "Input",
+ CellChangeTimes->{{3.615398004633647*^9, 
+  3.615398010422121*^9}},ExpressionUUID->"f8bb7895-0ed9-41c3-b0da-\
+6a0dd0742829"],
+
+Cell[BoxData[
+ DynamicModuleBox[{Typeset`open$$ = True}, 
+  PaneSelectorBox[{False->
+   RowBox[{
+    OpenerBox[Dynamic[Typeset`open$$],
+     ImageSize->Small], 
+    StyleBox["QI`", "InfoHeading"]}], True->GridBox[{
+     {
+      RowBox[{
+       OpenerBox[Dynamic[Typeset`open$$],
+        ImageSize->Small], 
+       StyleBox["QI`", "InfoHeading"]}]},
+     {GridBox[{
+        {
+         ButtonBox["ApplyChannel",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"ApplyChannel", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["id",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"id", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Proj",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Proj", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["SpecialUnitary",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"SpecialUnitary", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["SymbolicVector",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"SymbolicVector", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["ApplyKraus",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"ApplyKraus", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Id",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Id", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["QubitKet",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"QubitKet", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["SpecialUnitary2",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"SpecialUnitary2", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["sz",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"sz", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["BaseMatrices",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"BaseMatrices", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Jamiolkowski",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Jamiolkowski", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["QubitPureState",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"QubitPureState", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["StateToBloch",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"StateToBloch", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["TPChannelQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"TPChannelQ", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["BaseVectors",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"BaseVectors", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Lambda1",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Lambda1", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["RandomDynamicalMatrix",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"RandomDynamicalMatrix", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["StateVector",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"StateVector", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["TraceDistance",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"TraceDistance", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["BlochToState",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"BlochToState", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Lambda2",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Lambda2", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["RandomKet",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"RandomKet", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Subfidelity",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Subfidelity", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["TraceNorm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"TraceNorm", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["ChannelToMatrix",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"ChannelToMatrix", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Lambda3",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Lambda3", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["RandomOrthogonal",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"RandomOrthogonal", "QI`"}},
+          
+          ButtonNote->"QI`"], 
+         ButtonBox["Superfidelity",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Superfidelity", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Unitary2",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Unitary2", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["cnot",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"cnot", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["MatrixAbs",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"MatrixAbs", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["RandomSimplex",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"RandomSimplex", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Superoperator",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Superoperator", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Unitary2Euler",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Unitary2Euler", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["ComplexToPoint",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"ComplexToPoint", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["MatrixIm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"MatrixIm", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["RandomSpecialUnitary",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"RandomSpecialUnitary", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["SuperoperatorToKraus",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"SuperoperatorToKraus", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Unres",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Unres", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["DynamicalMatrix",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"DynamicalMatrix", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["MatrixRe",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"MatrixRe", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["RandomState",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"RandomState", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["sx",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"sx", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Unvec",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Unvec", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["Fidelity",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Fidelity", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["MatrixSqrt",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"MatrixSqrt", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["RandomUnitary",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"RandomUnitary", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["sy",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"sy", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Vec",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Vec", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["GateFidelity",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"GateFidelity", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["PartialTrace",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"PartialTrace", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["Res",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Res", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["SymbolicBistochasticMatrix",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"SymbolicBistochasticMatrix", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["wh",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"wh", "QI`"}},
+          ButtonNote->"QI`"]},
+        {
+         ButtonBox["GeneralizedPauliMatrices",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"GeneralizedPauliMatrices", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["PartialTranspose",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"PartialTranspose", "QI`"}},
+          
+          ButtonNote->"QI`"], 
+         ButtonBox["Reshuffle",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Reshuffle", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["SymbolicHermitianMatrix",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"SymbolicHermitianMatrix", "QI`"}},
+          ButtonNote->"QI`"], ""},
+        {
+         ButtonBox["GinibreMatrix",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"GinibreMatrix", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["ProductSuperoperator",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"ProductSuperoperator", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["SchmidtDecomposition",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"SchmidtDecomposition", "QI`"}},
+          ButtonNote->"QI`"], 
+         ButtonBox["SymbolicMatrix",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"SymbolicMatrix", "QI`"}},
+          ButtonNote->"QI`"], ""}
+       },
+       DefaultBaseStyle->"InfoGrid",
+       GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.19]}}}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}]}, 
+   Dynamic[Typeset`open$$],
+   ImageSize->Automatic]]], "Print", "InfoCell",
+ CellChangeTimes->{
+  3.615533947037671*^9},ExpressionUUID->"b93d8e31-4964-4e48-839b-\
+5d4a1c85c955"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "QIExtras`*"}]], "Input",
+ CellChangeTimes->{{3.615398032125382*^9, 
+  3.615398033199877*^9}},ExpressionUUID->"4ea89791-119d-489c-83b6-\
+de78db4c9584"],
+
+Cell[BoxData[
+ DynamicModuleBox[{Typeset`open$$ = True}, 
+  PaneSelectorBox[{False->
+   RowBox[{
+    OpenerBox[Dynamic[Typeset`open$$],
+     ImageSize->Small], 
+    StyleBox["QIExtras`", "InfoHeading"]}], True->GridBox[{
+     {
+      RowBox[{
+       OpenerBox[Dynamic[Typeset`open$$],
+        ImageSize->Small], 
+       StyleBox["QIExtras`", "InfoHeading"]}]},
+     {GridBox[{
+        {
+         ButtonBox["Concurrence4",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"Concurrence4", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["Negativity",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Negativity", "QIExtras`"}},
+          
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitDynamicalMatrix",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QubitDynamicalMatrix", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["DepolarizingChannel",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"DepolarizingChannel", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["NumericalRangeBound",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"NumericalRangeBound", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitPhaseflipChannel",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QubitPhaseflipChannel", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["EntanglementOfFormation4",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {
+            "EntanglementOfFormation4", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["PauliMatrices",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"PauliMatrices", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitPhaseflipKraus",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QubitPhaseflipKraus", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["ExtendKraus",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"ExtendKraus", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["ProbBures",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"ProbBures", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitPhaseKraus",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QubitPhaseKraus", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["GellMannMatrices",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"GellMannMatrices", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["ProbBuresNorm",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"ProbBuresNorm", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QutritSpontaneousEmissionKraus",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {
+            "QutritSpontaneousEmissionKraus", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["GeneralizedPauliKraus",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"GeneralizedPauliKraus", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["ProbHS",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"ProbHS", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["RandomMaximallyEntangledNumericalRange",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {
+            "RandomMaximallyEntangledNumericalRange", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["GeneralizedPauliX",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"GeneralizedPauliX", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["ProbHSNorm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"ProbHSNorm", "QIExtras`"}},
+          
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["RandomProductKet",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"RandomProductKet", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["GeneralizedPauliZ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"GeneralizedPauliZ", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["ProdDiff2",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"ProdDiff2", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["RandomProductNumericalRange",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {
+            "RandomProductNumericalRange", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["HolevoWernerChannel",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"HolevoWernerChannel", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["ProdSum",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"ProdSum", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["ReshufflePermutation",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"ReshufflePermutation", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["IdentityChannel",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"IdentityChannel", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QFT",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"QFT", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["ReshufflePermutationPrim",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {
+            "ReshufflePermutationPrim", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["IntegrateSU2",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"IntegrateSU2", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QuantumChannelEntropy",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QuantumChannelEntropy", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["ReshufflePrim",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"ReshufflePrim", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["IsotropicState",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"IsotropicState", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QuantumEntropy",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QuantumEntropy", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["Swap",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Swap", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["Ketbra",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Ketbra", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitBitflipChannel",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QubitBitflipChannel", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["TransposeChannel",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"TransposeChannel", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["KetFromDigits",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"KetFromDigits", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitBitflipKraus",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QubitBitflipKraus", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["Unitary3",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Unitary3", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["KroneckerDeltaMatrix",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"KroneckerDeltaMatrix", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitBitphaseflipChannel",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {
+            "QubitBitphaseflipChannel", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["Unitary4Canonical",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"Unitary4Canonical", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["Log0",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Log0", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitBitphaseflipKraus",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QubitBitphaseflipKraus", "QIExtras`"}},
+          
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["UpperBandOnes",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"UpperBandOnes", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["MaxEnt",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"MaxEnt", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitDaviesSuperoperator",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {
+            "QubitDaviesSuperoperator", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["UpperTriangularOnes",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"UpperTriangularOnes", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["MaxMix",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"MaxMix", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitDecayKraus",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QubitDecayKraus", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["VandermondeMatrix",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"VandermondeMatrix", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]},
+        {
+         ButtonBox["Mub",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"Mub", "QIExtras`"}},
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["QubitDepolarizingKraus",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3615541147-1981344", {"QubitDepolarizingKraus", "QIExtras`"}},
+          
+          ButtonNote->"QIExtras`"], 
+         ButtonBox["WernerState",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3615541147-1981344", {"WernerState", "QIExtras`"}},
+          ButtonNote->"QIExtras`"]}
+       },
+       DefaultBaseStyle->"InfoGrid",
+       GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.31666666666666665`]}}}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}]}, 
+   Dynamic[Typeset`open$$],
+   ImageSize->Automatic]]], "Print", "InfoCell",
+ CellChangeTimes->{
+  3.615533947782383*^9},ExpressionUUID->"f38bdc45-085c-4bdc-8a7e-\
+bf9f1f5959d8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Three valued logic", "Section",
+ CellChangeTimes->{{3.615533917946969*^9, 3.615533936473177*^9}, 
+   3.9225018405052156`*^9},ExpressionUUID->"6673c21b-e418-48df-b531-\
+44064c8b2a7f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ket", "[", 
+  RowBox[{"0", ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.615533939046281*^9, 
+  3.615533940547175*^9}},ExpressionUUID->"18f369a7-8c62-47ea-988d-\
+5fedfbe5ca0e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "0", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{{3.615533941039989*^9, 
+  3.615533949295018*^9}},ExpressionUUID->"ad231cad-2934-45ea-a7e4-\
+f37b765757f0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ket", "[", 
+  RowBox[{"1", ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.615533950771813*^9, 
+  3.615533953175687*^9}},ExpressionUUID->"0bbd4ad1-644d-4c5c-bb93-\
+dc99077b7be0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", "1", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.61553395353345*^9},ExpressionUUID->"9a2eae02-8da3-4936-8049-a8cf59ebcd64"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ket", "[", 
+  RowBox[{"2", ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.615533957241504*^9, 
+  3.615533957700529*^9}},ExpressionUUID->"3e14f548-a1a0-4dff-b8be-\
+ea1c998f8bb9"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", "0", ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.615533957868128*^9},ExpressionUUID->"d6d25714-39e2-4475-825d-\
+d8fbadd44f42"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ket", "[", 
+  RowBox[{"5", ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.615533959007886*^9, 
+  3.6155339614285994`*^9}},ExpressionUUID->"68942380-8b37-4645-bdf6-\
+137990f62041"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Ket", "::", "argerr"}], "MessageName"], ":", 
+  " ", "\<\"Requested index \[NoBreak]\\!\\(5\\)\[NoBreak] not smaller than \
+dimension of vector: \[NoBreak]\\!\\(3\\)\[NoBreak].\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.615533961718948*^9},ExpressionUUID->"f8ad1e88-b6b3-4865-a213-\
+d7abcdf0264f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "KroneckerProduct"}]], "Input",
+ CellChangeTimes->{{3.6155340099285803`*^9, 
+  3.615534069061667*^9}},ExpressionUUID->"92f9529e-fd77-4cb4-b553-\
+6f8a2d6fca7b"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\!\(\*RowBox[{\\\"KroneckerProduct\\\", \\\"[\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"m\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"m\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"]\\\"}]\) constructs the Kronecker product of the arrays \
+\!\(\*SubscriptBox[StyleBox[\\\"m\\\", \\\"TI\\\"], StyleBox[\\\"i\\\", \
+\\\"TI\\\"]]\).\"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/KroneckerProduct"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.615534069483155*^9},
+ CellTags->
+  "Info3615541269-1981344",ExpressionUUID->"766ab73b-702d-4361-95c1-\
+efcd4e3d8416"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Ket", "[", 
+   RowBox[{"0", ",", "3"}], "]"}], "\[CircleTimes]", 
+  RowBox[{"Ket", "[", 
+   RowBox[{"0", ",", "3"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.615534043170297*^9, 
+  3.615534044340114*^9}},ExpressionUUID->"cae8f88b-5bc7-42b5-86fb-\
+83544a05efbd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.6155340446243153`*^9},ExpressionUUID->"a169d678-6686-4370-bc58-\
+cd6cda9e00a2"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Projectors", "Section",
+ CellChangeTimes->{{3.615534839083085*^9, 
+  3.615534843906695*^9}},ExpressionUUID->"1957c170-9b88-4d96-9f0a-\
+c1dbef23482c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Proj", "[", 
+  RowBox[{"Ket", "[", 
+   RowBox[{"0", ",", "2"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.615534856408757*^9, 
+  3.615534887034071*^9}},ExpressionUUID->"4e47d085-a508-4db9-83f5-\
+8a54a512d11c"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "0"},
+     {"0", "0"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.615534867376378*^9, 
+  3.6155348873103323`*^9}},ExpressionUUID->"8633b3a6-1b63-4e4b-b991-\
+529f3b8f4c13"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ketbra", "[", 
+  RowBox[{"0", ",", "0", ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.615534913464966*^9, 
+  3.615534918762672*^9}},ExpressionUUID->"49b74833-0655-4477-a101-\
+bc53bc4f67a6"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "0"},
+     {"0", "0"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.615534919120764*^9},ExpressionUUID->"9e0f4edd-dbde-4004-b8b4-\
+fdcd9bb6049c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Ketbra"}]], "Input",
+ CellChangeTimes->{{3.615535043155928*^9, 
+  3.615535045112608*^9}},ExpressionUUID->"1aa2a211-a42a-426a-bbb8-\
+01e795e2c98a"],
+
+Cell[BoxData[
+ StyleBox["\<\"This function can be used in two ways. Ketbra[i,j,d] returns \
+\[VerticalSeparator]i\[RightAngleBracket]\[LeftAngleBracket]j\
+\[VerticalSeparator] acting on d-dimensional space. See also: Proj. \
+Ketbra[v1,v2] returns the appropriate operator for vectors v1 and v2..\"\>", 
+  "MSG"]], "Print", "PrintUsage",
+ CellChangeTimes->{3.615535045595089*^9},
+ CellTags->
+  "Info3615542245-1981344",ExpressionUUID->"7586605b-c041-4dd3-b812-\
+e71ea3d411ff"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Controlled gates", "Section",
+ CellChangeTimes->{{3.615534831315967*^9, 
+  3.6155348528089657`*^9}},ExpressionUUID->"2252b7a2-14f7-40c7-906b-\
+3c1bbddd71a9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Ketbra", "[", 
+    RowBox[{"0", ",", "0", ",", "2"}], "]"}], "\[CircleTimes]", "id"}], "+", 
+  RowBox[{
+   RowBox[{"Ketbra", "[", 
+    RowBox[{"1", ",", "1", ",", "2"}], "]"}], "\[CircleTimes]", 
+   "sx"}]}]], "Input",
+ CellChangeTimes->{{3.615538984357064*^9, 
+  3.615539005730248*^9}},ExpressionUUID->"4b89361a-68a2-473c-a026-\
+a9fcfbe5b8d9"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "0", "0", "0"},
+     {"0", "1", "0", "0"},
+     {"0", "0", "0", "1"},
+     {"0", "0", "1", "0"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.615538990775777*^9, 
+  3.615539006590146*^9}},ExpressionUUID->"7634345a-2515-4c61-aab2-\
+7a13607d5cde"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Proj"}]], "Input",
+ CellChangeTimes->{{3.615539037233346*^9, 
+  3.615539038910173*^9}},ExpressionUUID->"d6bd2b0c-1625-4648-8f59-\
+dc5d7b13babc"],
+
+Cell[BoxData[
+ StyleBox["\<\"\\!\\(\\*StyleBox[\\\"Proj\\\", \
+\\\"Input\\\"]\\)[\\!\\(\\*StyleBox[\\\"v\\\", \\\"TI\\\"]\\)] returns \
+projector of the vector \\!\\(\\*StyleBox[\\\"v\\\", \\\"TI\\\"]\\).\"\>", 
+  "MSG"]], "Print", "PrintUsage",
+ CellChangeTimes->{3.6155390394219646`*^9},
+ CellTags->
+  "Info3615546239-1981344",ExpressionUUID->"36acddce-727a-4943-8c69-\
+1c5e4737e7a7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ketbra", "[", 
+  RowBox[{
+   RowBox[{"Ket", "[", 
+    RowBox[{"0", ",", "2"}], "]"}], ",", 
+   RowBox[{"Ket", "[", 
+    RowBox[{"0", ",", "2"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.615539400652257*^9, 
+  3.615539400652804*^9}},ExpressionUUID->"d3fa060f-9b88-40d5-b690-\
+d66be47cfb5c"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "0"},
+     {"0", "0"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.615539401653049*^9},ExpressionUUID->"7316e315-2222-4d27-81f3-\
+454265a775e8"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1319.25, 744},
+WindowMargins->{{0, Automatic}, {Automatic, 152.25}},
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"47b1acc6-d088-4f8d-99a0-e1512318548b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3615541269-1981344"->{
+  Cell[31395, 861, 827, 17, 49, "Print",ExpressionUUID->"766ab73b-702d-4361-95c1-efcd4e3d8416",
+   CellTags->"Info3615541269-1981344"]},
+ "Info3615542245-1981344"->{
+  Cell[35154, 984, 475, 9, 40, "Print",ExpressionUUID->"7586605b-c041-4dd3-b812-e71ea3d411ff",
+   CellTags->"Info3615542245-1981344"]},
+ "Info3615546239-1981344"->{
+  Cell[37258, 1052, 386, 8, 41, "Print",ExpressionUUID->"36acddce-727a-4943-8c69-1c5e4737e7a7",
+   CellTags->"Info3615546239-1981344"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3615541269-1981344", 39084, 1111},
+ {"Info3615542245-1981344", 39250, 1114},
+ {"Info3615546239-1981344", 39415, 1117}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 180, 4, 29, "Input",ExpressionUUID->"789a4421-40ab-45b2-8535-ab866889ab86"],
+Cell[CellGroupData[{
+Cell[763, 28, 173, 4, 29, "Input",ExpressionUUID->"d014d8d6-b1cc-4c5b-aaa1-11941d058cd7"],
+Cell[939, 34, 589, 10, 24, "Message",ExpressionUUID->"0d2ed428-78da-4893-ba71-e9c5df6518f7"],
+Cell[1531, 46, 542, 13, 23, "Print",ExpressionUUID->"e53eb58f-ad4f-4e1c-ae9e-cf9b9234f3fb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2110, 64, 178, 4, 29, "Input",ExpressionUUID->"d8152488-738c-4378-b6a0-7dc95fa37dd8"],
+Cell[2291, 70, 509, 12, 23, "Print",ExpressionUUID->"12d37ed8-6a4d-4561-b55f-38810a605cb6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2837, 87, 173, 4, 29, "Input",ExpressionUUID->"f8bb7895-0ed9-41c3-b0da-6a0dd0742829"],
+Cell[3013, 93, 12382, 306, 347, "Print",ExpressionUUID->"b93d8e31-4964-4e48-839b-5d4a1c85c955"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15432, 404, 179, 4, 29, "Input",ExpressionUUID->"4ea89791-119d-489c-83b6-de78db4c9584"],
+Cell[15614, 410, 13430, 363, 491, "Print",ExpressionUUID->"f38bdc45-085c-4bdc-8a7e-bf9f1f5959d8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29081, 778, 188, 3, 67, "Section",ExpressionUUID->"6673c21b-e418-48df-b531-44064c8b2a7f"],
+Cell[CellGroupData[{
+Cell[29294, 785, 205, 5, 29, "Input",ExpressionUUID->"18f369a7-8c62-47ea-988d-5fedfbe5ca0e"],
+Cell[29502, 792, 209, 5, 33, "Output",ExpressionUUID->"ad231cad-2934-45ea-a7e4-f37b765757f0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29748, 802, 205, 5, 29, "Input",ExpressionUUID->"0bbd4ad1-644d-4c5c-bb93-dc99077b7be0"],
+Cell[29956, 809, 182, 4, 33, "Output",ExpressionUUID->"9a2eae02-8da3-4936-8049-a8cf59ebcd64"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30175, 818, 205, 5, 29, "Input",ExpressionUUID->"3e14f548-a1a0-4dff-b8be-ea1c998f8bb9"],
+Cell[30383, 825, 185, 5, 33, "Output",ExpressionUUID->"d6d25714-39e2-4475-825d-d8fbadd44f42"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30605, 835, 207, 5, 29, "Input",ExpressionUUID->"68942380-8b37-4645-bdf6-137990f62041"],
+Cell[30815, 842, 353, 8, 21, "Message",ExpressionUUID->"f8ad1e88-b6b3-4865-a213-d7abcdf0264f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31205, 855, 187, 4, 29, "Input",ExpressionUUID->"92f9529e-fd77-4cb4-b553-6f8a2d6fca7b"],
+Cell[31395, 861, 827, 17, 49, "Print",ExpressionUUID->"766ab73b-702d-4361-95c1-efcd4e3d8416",
+ CellTags->"Info3615541269-1981344"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32259, 883, 296, 8, 29, "Input",ExpressionUUID->"cae8f88b-5bc7-42b5-86fb-83544a05efbd"],
+Cell[32558, 893, 254, 7, 33, "Output",ExpressionUUID->"a169d678-6686-4370-bc58-cd6cda9e00a2"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32861, 906, 155, 3, 67, "Section",ExpressionUUID->"1957c170-9b88-4d96-9f0a-c1dbef23482c"],
+Cell[CellGroupData[{
+Cell[33041, 913, 237, 6, 29, "Input",ExpressionUUID->"4e47d085-a508-4db9-83f5-8a54a512d11c"],
+Cell[33281, 921, 713, 20, 47, "Output",ExpressionUUID->"8633b3a6-1b63-4e4b-b991-529f3b8f4c13"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34031, 946, 218, 5, 29, "Input",ExpressionUUID->"49b74833-0655-4477-a101-bc53bc4f67a6"],
+Cell[34252, 953, 687, 20, 47, "Output",ExpressionUUID->"9e0f4edd-dbde-4004-b8b4-fdcd9bb6049c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34976, 978, 175, 4, 29, "Input",ExpressionUUID->"1aa2a211-a42a-426a-bbb8-01e795e2c98a"],
+Cell[35154, 984, 475, 9, 40, "Print",ExpressionUUID->"7586605b-c041-4dd3-b812-e71ea3d411ff",
+ CellTags->"Info3615542245-1981344"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35678, 999, 163, 3, 67, "Section",ExpressionUUID->"2252b7a2-14f7-40c7-906b-3c1bbddd71a9"],
+Cell[CellGroupData[{
+Cell[35866, 1006, 391, 11, 29, "Input",ExpressionUUID->"4b89361a-68a2-473c-a026-a9fcfbe5b8d9"],
+Cell[36260, 1019, 785, 22, 81, "Output",ExpressionUUID->"7634345a-2515-4c61-aab2-7a13607d5cde"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37082, 1046, 173, 4, 29, "Input",ExpressionUUID->"d6bd2b0c-1625-4648-8f59-dc5d7b13babc"],
+Cell[37258, 1052, 386, 8, 41, "Print",ExpressionUUID->"36acddce-727a-4943-8c69-1c5e4737e7a7",
+ CellTags->"Info3615546239-1981344"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37681, 1065, 320, 9, 29, "Input",ExpressionUUID->"d3fa060f-9b88-40d5-b690-d66be47cfb5c"],
+Cell[38004, 1076, 687, 20, 47, "Output",ExpressionUUID->"7316e315-2222-4d27-81f3-454265a775e8"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
