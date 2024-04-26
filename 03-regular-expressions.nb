@@ -1,0 +1,1144 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     50173,       1136]
+NotebookOptionsPosition[     46482,       1062]
+NotebookOutlinePosition[     46874,       1078]
+CellTagsIndexPosition[     46831,       1075]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"?", "StringMatchQ"}]], "Input",
+ CellChangeTimes->{{3.901857907529479*^9, 3.901857909623437*^9}, {
+  3.901873023531761*^9, 3.901873024335005*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"9d15105d-78fe-4e01-95e9-f260c361be28"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/StringMatchQ",
+              ButtonNote->"paclet:ref/StringMatchQ"],
+             "\"paclet:ref/StringMatchQ\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"\\\\\\\"\\\\!\\\\(\\\\*StyleBox[\\\\\\\"string\\\\\\\",\\\
+\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", ShowStringCharacters->True], \\\",\\\", \
+StyleBox[\\\"patt\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) tests whether \\\"\\!\\(\
+\\*StyleBox[\\\"string\\\", \\\"TI\\\"]\\)\\\" matches the string pattern \\!\
+\\(\\*StyleBox[\\\"patt\\\", \\\"TI\\\"]\\). \
+\\n\\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"\\\\\\\"\\\\!\\\\(\\\\*StyleBox[\\\\\\\"string\\\\\\\",\\\
+\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", ShowStringCharacters->True], \\\",\\\", \
+RowBox[{\\\"RegularExpression\\\", \\\"[\\\", StyleBox[\\\"\\\\\\\"\\\\!\\\\(\
+\\\\*StyleBox[\\\\\\\"regex\\\\\\\",\\\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", \
+ShowStringCharacters->True], \\\"]\\\"}]}], \\\"]\\\"}]\\) tests whether \\\"\
+\\!\\(\\*StyleBox[\\\"string\\\", \\\"TI\\\"]\\)\\\" matches the specified \
+regular expression. \\n\\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"\\\\\\\"\\\\!\\\\(\\\\*StyleBox[\\\\\\\"string\\\\\\\",\\\
+\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", ShowStringCharacters->True], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"patt\\\", \\\"TI\\\"], \
+StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"patt\\\
+\", \\\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) test whether \\\
+\"\\!\\(\\*StyleBox[\\\"string\\\", \\\"TI\\\"]\\)\\\" matches any of the \\!\
+\\(\\*SubscriptBox[StyleBox[\\\"patt\\\", \\\"TI\\\"], StyleBox[\\\"i\\\", \\\
+\"TI\\\"]]\\).\\n\\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"string\\\", \
+\\\"TI\\\"], StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"string\\\", \\\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\
+\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}], \
+\\\",\\\", StyleBox[\\\"patt\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) gives the \
+list of the results for each of the \
+\\\"\\!\\(\\*SubscriptBox[StyleBox[\\\"string\\\", \\\"TI\\\"], \
+StyleBox[\\\"i\\\", \\\"TI\\\"]]\\)\\\". \\n\\!\\(\\*RowBox[{\\\"StringMatchQ\
+\\\", \\\"[\\\", StyleBox[\\\"patt\\\", \\\"TI\\\"], \\\"]\\\"}]\\) \
+represents an operator form of StringMatchQ that can be applied to an \
+expression.\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", "paclet:ref/StringMatchQ", 
+                    "paclet:ref/StringMatchQ", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/StringMatchQ.\
+html"], None}, "http://reference.wolfram.com/language/ref/StringMatchQ.html", 
+                    "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Options\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Options\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Options", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"IgnoreCase", "\[Rule]", "False"}], ",", 
+                    RowBox[{"SpellingCorrection", "\[Rule]", "False"}]}], 
+                    "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", "Protected", "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`StringMatchQ\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/StringMatchQ",
+              ButtonNote->"paclet:ref/StringMatchQ"],
+             "\"paclet:ref/StringMatchQ\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"\\\\\\\"\\\\!\\\\(\\\\*StyleBox[\\\\\\\"string\\\\\\\",\\\
+\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", ShowStringCharacters->True], \\\",\\\", \
+StyleBox[\\\"patt\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) tests whether \\\"\\!\\(\
+\\*StyleBox[\\\"string\\\", \\\"TI\\\"]\\)\\\" matches the string pattern \\!\
+\\(\\*StyleBox[\\\"patt\\\", \\\"TI\\\"]\\). \
+\\n\\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"\\\\\\\"\\\\!\\\\(\\\\*StyleBox[\\\\\\\"string\\\\\\\",\\\
+\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", ShowStringCharacters->True], \\\",\\\", \
+RowBox[{\\\"RegularExpression\\\", \\\"[\\\", StyleBox[\\\"\\\\\\\"\\\\!\\\\(\
+\\\\*StyleBox[\\\\\\\"regex\\\\\\\",\\\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", \
+ShowStringCharacters->True], \\\"]\\\"}]}], \\\"]\\\"}]\\) tests whether \\\"\
+\\!\\(\\*StyleBox[\\\"string\\\", \\\"TI\\\"]\\)\\\" matches the specified \
+regular expression. \\n\\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"\\\\\\\"\\\\!\\\\(\\\\*StyleBox[\\\\\\\"string\\\\\\\",\\\
+\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", ShowStringCharacters->True], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"patt\\\", \\\"TI\\\"], \
+StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"patt\\\
+\", \\\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) test whether \\\
+\"\\!\\(\\*StyleBox[\\\"string\\\", \\\"TI\\\"]\\)\\\" matches any of the \\!\
+\\(\\*SubscriptBox[StyleBox[\\\"patt\\\", \\\"TI\\\"], StyleBox[\\\"i\\\", \\\
+\"TI\\\"]]\\).\\n\\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"string\\\", \
+\\\"TI\\\"], StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"string\\\", \\\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\
+\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}], \
+\\\",\\\", StyleBox[\\\"patt\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) gives the \
+list of the results for each of the \
+\\\"\\!\\(\\*SubscriptBox[StyleBox[\\\"string\\\", \\\"TI\\\"], \
+StyleBox[\\\"i\\\", \\\"TI\\\"]]\\)\\\". \\n\\!\\(\\*RowBox[{\\\"StringMatchQ\
+\\\", \\\"[\\\", StyleBox[\\\"patt\\\", \\\"TI\\\"], \\\"]\\\"}]\\) \
+represents an operator form of StringMatchQ that can be applied to an \
+expression.\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"StringMatchQ\", \"[\", \
+RowBox[{StyleBox[\"\\\"\\!\\(\\*StyleBox[\\\"string\\\",\\\"TI\\\"]\\)\\\"\", \
+ShowStringCharacters->True], \",\", StyleBox[\"patt\", \"TI\"]}], \"]\"}]\) \
+tests whether \"\!\(\*StyleBox[\"string\", \"TI\"]\)\" matches the string \
+pattern \!\(\*StyleBox[\"patt\", \"TI\"]\). \n\!\(\*RowBox[{\"StringMatchQ\", \
+\"[\", RowBox[{StyleBox[\"\\\"\\!\\(\\*StyleBox[\\\"string\\\",\\\"TI\\\"]\\)\
+\\\"\", ShowStringCharacters->True], \",\", RowBox[{\"RegularExpression\", \
+\"[\", StyleBox[\"\\\"\\!\\(\\*StyleBox[\\\"regex\\\",\\\"TI\\\"]\\)\\\"\", \
+ShowStringCharacters->True], \"]\"}]}], \"]\"}]\) tests whether \
+\"\!\(\*StyleBox[\"string\", \"TI\"]\)\" matches the specified regular \
+expression. \n\!\(\*RowBox[{\"StringMatchQ\", \"[\", \
+RowBox[{StyleBox[\"\\\"\\!\\(\\*StyleBox[\\\"string\\\",\\\"TI\\\"]\\)\\\"\", \
+ShowStringCharacters->True], \",\", RowBox[{\"{\", \
+RowBox[{SubscriptBox[StyleBox[\"patt\", \"TI\"], StyleBox[\"1\", \"TR\"]], \
+\",\", SubscriptBox[StyleBox[\"patt\", \"TI\"], StyleBox[\"2\", \"TR\"]], \",\
+\", StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"}\"}]}], \"]\"}]\) test whether \"\
+\!\(\*StyleBox[\"string\", \"TI\"]\)\" matches any of the \
+\!\(\*SubscriptBox[StyleBox[\"patt\", \"TI\"], StyleBox[\"i\", \"TI\"]]\).\n\
+\!\(\*RowBox[{\"StringMatchQ\", \"[\", RowBox[{RowBox[{\"{\", \
+RowBox[{SubscriptBox[StyleBox[\"string\", \"TI\"], StyleBox[\"1\", \"TR\"]], \
+\",\", SubscriptBox[StyleBox[\"string\", \"TI\"], StyleBox[\"2\", \"TR\"]], \
+\",\", StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"}\"}], \",\", \
+StyleBox[\"patt\", \"TI\"]}], \"]\"}]\) gives the list of the results for \
+each of the \"\!\(\*SubscriptBox[StyleBox[\"string\", \"TI\"], \
+StyleBox[\"i\", \"TI\"]]\)\". \n\!\(\*RowBox[{\"StringMatchQ\", \"[\", \
+StyleBox[\"patt\", \"TI\"], \"]\"}]\) represents an operator form of \
+StringMatchQ that can be applied to an expression.", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/StringMatchQ", "Web" -> 
+      "http://reference.wolfram.com/language/ref/StringMatchQ.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, 
+    "Options" -> {IgnoreCase -> False, SpellingCorrection -> False}, 
+    "Attributes" -> {Protected}, "FullName" -> "System`StringMatchQ"|>, 
+   False]]], "Output",
+ CellChangeTimes->{3.9018579111329947`*^9, 3.901873024829639*^9, 
+  3.901877409470503*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"a6e356a9-a410-4b12-bd71-aab4c9dafcf3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringMatchQ", "[", 
+  RowBox[{"\"\<ABC\>\"", ",", 
+   RowBox[{"\"\<A\>\"", "~~", "_", "~~", "\"\<C\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.901873205075264*^9, 3.901873242365116*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"08bfbb72-d4bb-4ecf-ba56-8e9338b2afcf"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.901873225125102*^9, 3.90187323911275*^9}, 
+   3.901877410101685*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"12b72065-6845-47ce-a7ab-54dabb2d1dbf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"se2", "=", 
+  RowBox[{
+  "\"\<A\>\"", "~~", "LetterCharacter", "~~", 
+   "\"\<C\>\""}]}], "\[IndentingNewLine]", 
+ RowBox[{"StringMatchQ", "[", 
+  RowBox[{"\"\<ABC\>\"", ",", "se2"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.9018736548384953`*^9, 3.90187368501546*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"6725ddc5-5315-49d1-b160-b1186c66ec12"],
+
+Cell[BoxData[
+ RowBox[{"\<\"A\"\>", "~~", "LetterCharacter", "~~", "\<\"C\"\>"}]], "Output",\
+
+ CellChangeTimes->{
+  3.90187363819512*^9, {3.901873672253343*^9, 3.901873685262018*^9}, 
+   3.901877410346073*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"902cf16b-e8c1-4067-845f-f1b3cfdf232d"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{
+  3.90187363819512*^9, {3.901873672253343*^9, 3.901873685262018*^9}, 
+   3.901877410349938*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"a13da2d9-0709-4186-a297-06eb7e1f7732"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringMatchQ", "[", 
+  RowBox[{"\"\<ABC\>\"", ",", "se2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.901873633064587*^9, 3.901873640101686*^9}, {
+  3.9018736793746147`*^9, 3.901873681432395*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"98722c26-f82b-48a1-9429-bf316b42460c"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.901873633831605*^9, 3.901873641022538*^9}, {
+   3.901873673275619*^9, 3.901873679682797*^9}, 3.901877411606577*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"ea712a66-5f51-4205-b7ff-e5e5a4d5c1ca"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringMatchQ", "[", 
+  RowBox[{"\"\<1234\>\"", ",", 
+   RowBox[{"DigitCharacter", ".."}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.901873868214758*^9, 3.90187387155893*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"86d9a7cc-65d4-41a2-a778-913132165324"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.901873869328974*^9, 3.9018738719430323`*^9}, 
+   3.9018774122768517`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"e7685cb8-296a-43bc-bd82-170d07be1bbf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringMatchQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\"\<A123B\>\"", ",", "\"\<A\>\""}], "}"}], ",", 
+   RowBox[{"LetterCharacter", "~~", 
+    RowBox[{"DigitCharacter", "..."}], "~~", "LetterCharacter"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.901874001568089*^9, 3.901874001571043*^9}, {
+  3.901874036700595*^9, 3.901874049327881*^9}, {3.9018742804426613`*^9, 
+  3.901874285771779*^9}, {3.901874550026144*^9, 3.9018745559696293`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"c9cea56e-9762-4c93-b4b3-fed4bd6be15d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"True", ",", "False"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.9018740022965393`*^9, {3.90187403706609*^9, 3.901874049852529*^9}, 
+   3.901874556293434*^9, 3.901877412854195*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"65a89394-cbdd-4d43-9671-cd688cc72265"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringMatchQ", "[", 
+  RowBox[{"\"\<A12B\>\"", ",", 
+   RowBox[{"LetterCharacter", "~~", 
+    RowBox[{"DigitCharacter", ".."}], "~~", "LetterCharacter"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.901874056297968*^9, 3.9018740563010387`*^9}, {
+  3.90187428719566*^9, 3.901874288169568*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"61206b59-000d-4beb-a25d-20a2fe7b8e24"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.9018740572284403`*^9, 3.901877413459997*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"fdec1432-2478-4a2f-ae93-89ba80ef7812"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringContainsQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<A12\>\"", ",", "\"\<A1A\>\"", ",", " ", "\"\<B123\>\"", ",", " ", 
+     "\"\<A7BA\>\""}], "}"}], " ", ",", 
+   RowBox[{
+   "\"\<A\>\"", " ", "~~", " ", "DigitCharacter", " ", "~~", " ", 
+    "LetterCharacter"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9018742132325974`*^9, 3.901874257848229*^9}, {
+  3.9018743482827177`*^9, 3.901874362465029*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"74141fce-bd21-4bbb-a525-85a7e3dfd8b8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"False", ",", "True", ",", "False", ",", "True"}], "}"}]], "Output",\
+
+ CellChangeTimes->{{3.901874250217023*^9, 3.901874258299788*^9}, {
+   3.901874349340537*^9, 3.901874363078801*^9}, 3.901877416271496*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"f79395d3-95b9-40aa-9d4b-a6dde0aef4c8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "StringContainsQ"}]], "Input",
+ CellChangeTimes->{{3.901874535972711*^9, 3.901874538850078*^9}, 
+   3.901877419543535*^9},
+ CellLabel->"In[10]:=",ExpressionUUID->"314750f0-bf2e-4106-9cbb-bfc0f5a28e44"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/StringContainsQ",
+              ButtonNote->"paclet:ref/StringContainsQ"],
+             "\"paclet:ref/StringContainsQ\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \
+\\\"[\\\", \
+RowBox[{StyleBox[\\\"\\\\\\\"\\\\!\\\\(\\\\*StyleBox[\\\\\\\"string\\\\\\\",\\\
+\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", ShowStringCharacters->True], \\\",\\\", \
+StyleBox[\\\"patt\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) yields True if any \
+substring in \\\"\\!\\(\\*StyleBox[\\\"string\\\", \\\"TI\\\"]\\)\\\" matches \
+the string expression \\!\\(\\*StyleBox[\\\"patt\\\", \\\"TI\\\"]\\), and \
+yields False otherwise.\\n\\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \
+\\\"[\\\", \
+RowBox[{StyleBox[\\\"\\\\\\\"\\\\!\\\\(\\\\*StyleBox[\\\\\\\"string\\\\\\\",\\\
+\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", ShowStringCharacters->True], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"patt\\\", \\\"TI\\\"], \
+StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"patt\\\
+\", \\\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) yields True if \
+any substring matches any of the \\!\\(\\*SubscriptBox[StyleBox[\\\"patt\\\", \
+\\\"TI\\\"], StyleBox[\\\"i\\\", \
+\\\"TI\\\"]]\\).\\n\\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"string\\\", \
+\\\"TI\\\"], StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"string\\\", \\\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\
+\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}], \
+\\\",\\\", StyleBox[\\\"patt\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) gives a list \
+of the results for each of the \
+\\\"\\!\\(\\*SubscriptBox[StyleBox[\\\"string\\\", \\\"TI\\\"], \
+StyleBox[\\\"i\\\", \
+\\\"TI\\\"]]\\)\\\".\\n\\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
+StyleBox[\\\"patt\\\", \\\"TI\\\"], \\\"]\\\"}]\\) represents an operator \
+form of StringContainsQ that can be applied to an expression.\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", 
+                    "paclet:ref/StringContainsQ", 
+                    "paclet:ref/StringContainsQ", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/\
+StringContainsQ.html"], None}, 
+                    "http://reference.wolfram.com/language/ref/\
+StringContainsQ.html", "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Options\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Options\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Options", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"IgnoreCase", "\[Rule]", "False"}], ",", 
+                    RowBox[{"MetaCharacters", "\[Rule]", "None"}]}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", "Protected", "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`StringContainsQ\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/StringContainsQ",
+              ButtonNote->"paclet:ref/StringContainsQ"],
+             "\"paclet:ref/StringContainsQ\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \
+\\\"[\\\", \
+RowBox[{StyleBox[\\\"\\\\\\\"\\\\!\\\\(\\\\*StyleBox[\\\\\\\"string\\\\\\\",\\\
+\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", ShowStringCharacters->True], \\\",\\\", \
+StyleBox[\\\"patt\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) yields True if any \
+substring in \\\"\\!\\(\\*StyleBox[\\\"string\\\", \\\"TI\\\"]\\)\\\" matches \
+the string expression \\!\\(\\*StyleBox[\\\"patt\\\", \\\"TI\\\"]\\), and \
+yields False otherwise.\\n\\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \
+\\\"[\\\", \
+RowBox[{StyleBox[\\\"\\\\\\\"\\\\!\\\\(\\\\*StyleBox[\\\\\\\"string\\\\\\\",\\\
+\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\", ShowStringCharacters->True], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"patt\\\", \\\"TI\\\"], \
+StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"patt\\\
+\", \\\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) yields True if \
+any substring matches any of the \\!\\(\\*SubscriptBox[StyleBox[\\\"patt\\\", \
+\\\"TI\\\"], StyleBox[\\\"i\\\", \
+\\\"TI\\\"]]\\).\\n\\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"string\\\", \
+\\\"TI\\\"], StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"string\\\", \\\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\
+\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}], \
+\\\",\\\", StyleBox[\\\"patt\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) gives a list \
+of the results for each of the \
+\\\"\\!\\(\\*SubscriptBox[StyleBox[\\\"string\\\", \\\"TI\\\"], \
+StyleBox[\\\"i\\\", \
+\\\"TI\\\"]]\\)\\\".\\n\\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
+StyleBox[\\\"patt\\\", \\\"TI\\\"], \\\"]\\\"}]\\) represents an operator \
+form of StringContainsQ that can be applied to an expression.\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"StringContainsQ\", \"[\", \
+RowBox[{StyleBox[\"\\\"\\!\\(\\*StyleBox[\\\"string\\\",\\\"TI\\\"]\\)\\\"\", \
+ShowStringCharacters->True], \",\", StyleBox[\"patt\", \"TI\"]}], \"]\"}]\) \
+yields True if any substring in \"\!\(\*StyleBox[\"string\", \"TI\"]\)\" \
+matches the string expression \!\(\*StyleBox[\"patt\", \"TI\"]\), and yields \
+False otherwise.\n\!\(\*RowBox[{\"StringContainsQ\", \"[\", RowBox[{StyleBox[\
+\"\\\"\\!\\(\\*StyleBox[\\\"string\\\",\\\"TI\\\"]\\)\\\"\", \
+ShowStringCharacters->True], \",\", RowBox[{\"{\", \
+RowBox[{SubscriptBox[StyleBox[\"patt\", \"TI\"], StyleBox[\"1\", \"TR\"]], \
+\",\", SubscriptBox[StyleBox[\"patt\", \"TI\"], StyleBox[\"2\", \"TR\"]], \",\
+\", StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"}\"}]}], \"]\"}]\) yields True if \
+any substring matches any of the \!\(\*SubscriptBox[StyleBox[\"patt\", \
+\"TI\"], StyleBox[\"i\", \"TI\"]]\).\n\!\(\*RowBox[{\"StringContainsQ\", \
+\"[\", RowBox[{RowBox[{\"{\", RowBox[{SubscriptBox[StyleBox[\"string\", \
+\"TI\"], StyleBox[\"1\", \"TR\"]], \",\", SubscriptBox[StyleBox[\"string\", \
+\"TI\"], StyleBox[\"2\", \"TR\"]], \",\", StyleBox[\"\[Ellipsis]\", \
+\"TR\"]}], \"}\"}], \",\", StyleBox[\"patt\", \"TI\"]}], \"]\"}]\) gives a \
+list of the results for each of the \"\!\(\*SubscriptBox[StyleBox[\"string\", \
+\"TI\"], StyleBox[\"i\", \"TI\"]]\)\".\n\!\(\*RowBox[{\"StringContainsQ\", \
+\"[\", StyleBox[\"patt\", \"TI\"], \"]\"}]\) represents an operator form of \
+StringContainsQ that can be applied to an expression.", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/StringContainsQ", "Web" -> 
+      "http://reference.wolfram.com/language/ref/StringContainsQ.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, 
+    "Options" -> {IgnoreCase -> False, MetaCharacters -> None}, 
+    "Attributes" -> {Protected}, "FullName" -> "System`StringContainsQ"|>, 
+   False]]], "Output",
+ CellChangeTimes->{{3.901874536427539*^9, 3.901874539206428*^9}, 
+   3.90187741995892*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"2db5956e-011b-43b6-86ec-7fb3257f3c91"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringContainsQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<A12\>\"", ",", "\"\<A1A\>\"", ",", "\"\<B123\>\"", ",", 
+     "\"\<A7BA\>\""}], "}"}], ",", 
+   RowBox[{"\"\<A\>\"", "~~", "DigitCharacter", "~~", "LetterCharacter"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.901874657588326*^9, 3.901874657591505*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"f586f28b-86fd-43b7-8608-c63ba708d31a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"False", ",", "True", ",", "False", ",", "True"}], "}"}]], "Output",\
+
+ CellChangeTimes->{3.901874658316948*^9, 3.901877420729486*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"796b4030-00e1-41f4-b6ea-4d03c0845ec4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Select", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<A12\>\"", ",", "\"\<A1A\>\"", ",", "\"\<B123\>\"", ",", 
+     "\"\<A7BA\>\""}], "}"}], ",", 
+   RowBox[{"StringContainsQ", "[", 
+    RowBox[{"\"\<A\>\"", "~~", "DigitCharacter", "~~", "LetterCharacter"}], 
+    "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.901874944599738*^9, 3.901874988875394*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"5d603151-a89c-463c-985f-e59292683be5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"A1A\"\>", ",", "\<\"A7BA\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.901874963709774*^9, 3.901874989655889*^9}, 
+   3.901877421299053*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"596db23c-c488-4fef-965b-87709981baa5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringMatchQ", "[", 
+  RowBox[{"\"\<abc\\n123\>\"", ",", " ", 
+   RowBox[{
+    RowBox[{"LetterCharacter", ".."}], " ", "~~", " ", "WhitespaceCharacter", 
+    "~~", " ", 
+    RowBox[{"DigitCharacter", ".."}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.901875525662157*^9, 3.901875604190283*^9}, {
+  3.901875725023315*^9, 3.901875725694601*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"01c28dab-da7b-4da9-8a12-1672e0b4b9fa"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.9018755676197033`*^9, 3.9018756046318493`*^9}, 
+   3.901875726161618*^9, 3.901877423776935*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"5a729cad-db1a-4acf-aef2-847784f48474"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringMatchQ", "[", 
+  RowBox[{"\"\<abc\\n123\>\"", ",", " ", 
+   RowBox[{"RegularExpression", "[", "\"\<\\\\w+\\\\s\\\\d+\>\"", "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.901875615631469*^9, 3.901875729478561*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"c4d51b97-6e8d-4bbb-b509-172a098b5b36"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.9018756634041977`*^9, 3.901875730004902*^9}, 
+   3.901877424262082*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"cbf1ee12-628b-4d93-a5a4-b6a26020cbbc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringMatchQ", "[", 
+  RowBox[{"\"\<A\>\"", ",", 
+   RowBox[{"\"\<A\>\"", "|", "\"\<B\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9018764640701237`*^9, 3.901876487978345*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"41bb0448-b7cc-4002-adc5-29a674d20a6e"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.9018764716766787`*^9, 3.9018764885932493`*^9}, 
+   3.901877424781748*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"9354f9be-b152-4526-bc97-9c0aa748fd58"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RegularExpression", "[", "\"\<A\>\"", "]"}], "===", 
+  "\"\<A\>\""}]], "Input",
+ CellChangeTimes->{{3.901876520947113*^9, 3.901876541484129*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"fd82e690-9d9b-4829-9d53-fa5e98bca692"],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{{3.901876524625108*^9, 3.901876541824729*^9}, 
+   3.901877425312204*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"6ced8d33-7dee-40e6-a8f1-9f6997f2d847"]
+}, Open  ]]
+},
+WindowSize->{1440, 761.25},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Linux x86 (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c6c60a0f-84cd-40aa-87bc-0dc732399225"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 248, 4, 29, "Input",ExpressionUUID->"9d15105d-78fe-4e01-95e9-f260c361be28"],
+Cell[831, 28, 18977, 392, 196, "Output",ExpressionUUID->"a6e356a9-a410-4b12-bd71-aab4c9dafcf3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19845, 425, 294, 5, 29, "Input",ExpressionUUID->"08bfbb72-d4bb-4ecf-ba56-8e9338b2afcf"],
+Cell[20142, 432, 200, 3, 33, "Output",ExpressionUUID->"12b72065-6845-47ce-a7ab-54dabb2d1dbf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20379, 440, 371, 8, 50, "Input",ExpressionUUID->"6725ddc5-5315-49d1-b160-b1186c66ec12"],
+Cell[20753, 450, 288, 6, 33, "Output",ExpressionUUID->"902cf16b-e8c1-4067-845f-f1b3cfdf232d"],
+Cell[21044, 458, 225, 4, 33, "Output",ExpressionUUID->"a13da2d9-0709-4186-a297-06eb7e1f7732"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21306, 467, 295, 5, 29, "Input",ExpressionUUID->"98722c26-f82b-48a1-9429-bf316b42460c"],
+Cell[21604, 474, 247, 3, 33, "Output",ExpressionUUID->"ea712a66-5f51-4205-b7ff-e5e5a4d5c1ca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21888, 482, 275, 5, 29, "Input",ExpressionUUID->"86d9a7cc-65d4-41a2-a778-913132165324"],
+Cell[22166, 489, 205, 3, 33, "Output",ExpressionUUID->"e7685cb8-296a-43bc-bd82-170d07be1bbf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22408, 497, 551, 11, 29, "Input",ExpressionUUID->"c9cea56e-9762-4c93-b4b3-fed4bd6be15d"],
+Cell[22962, 510, 298, 6, 33, "Output",ExpressionUUID->"65a89394-cbdd-4d43-9671-cd688cc72265"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23297, 521, 394, 8, 29, "Input",ExpressionUUID->"61206b59-000d-4beb-a25d-20a2fe7b8e24"],
+Cell[23694, 531, 175, 2, 33, "Output",ExpressionUUID->"fdec1432-2478-4a2f-ae93-89ba80ef7812"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23906, 538, 525, 12, 31, "Input",ExpressionUUID->"74141fce-bd21-4bbb-a525-85a7e3dfd8b8"],
+Cell[24434, 552, 325, 6, 33, "Output",ExpressionUUID->"f79395d3-95b9-40aa-9d4b-a6dde0aef4c8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24796, 563, 229, 4, 29, "Input",ExpressionUUID->"314750f0-bf2e-4106-9cbb-bfc0f5a28e44"],
+Cell[25028, 569, 17625, 380, 173, "Output",ExpressionUUID->"2db5956e-011b-43b6-86ec-7fb3257f3c91"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42690, 954, 432, 10, 29, "Input",ExpressionUUID->"f586f28b-86fd-43b7-8608-c63ba708d31a"],
+Cell[43125, 966, 252, 5, 33, "Output",ExpressionUUID->"796b4030-00e1-41f4-b6ea-4d03c0845ec4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43414, 976, 469, 11, 29, "Input",ExpressionUUID->"5d603151-a89c-463c-985f-e59292683be5"],
+Cell[43886, 989, 265, 5, 33, "Output",ExpressionUUID->"596db23c-c488-4fef-965b-87709981baa5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44188, 999, 446, 9, 31, "Input",ExpressionUUID->"01c28dab-da7b-4da9-8a12-1672e0b4b9fa"],
+Cell[44637, 1010, 228, 3, 33, "Output",ExpressionUUID->"5a729cad-db1a-4acf-aef2-847784f48474"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44902, 1018, 326, 6, 31, "Input",ExpressionUUID->"c4d51b97-6e8d-4bbb-b509-172a098b5b36"],
+Cell[45231, 1026, 204, 3, 33, "Output",ExpressionUUID->"cbf1ee12-628b-4d93-a5a4-b6a26020cbbc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45472, 1034, 283, 5, 30, "Input",ExpressionUUID->"41bb0448-b7cc-4002-adc5-29a674d20a6e"],
+Cell[45758, 1041, 206, 3, 33, "Output",ExpressionUUID->"9354f9be-b152-4526-bc97-9c0aa748fd58"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46001, 1049, 259, 5, 29, "Input",ExpressionUUID->"fd82e690-9d9b-4829-9d53-fa5e98bca692"],
+Cell[46263, 1056, 203, 3, 33, "Output",ExpressionUUID->"6ced8d33-7dee-40e6-a8f1-9f6997f2d847"]
+}, Open  ]]
+}
+]
+*)
+
